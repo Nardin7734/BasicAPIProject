@@ -26,6 +26,6 @@ router.register('tipos', TiposViewSet, basename='Tipos')
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('onizuka/', admin.site.urls),
     path('', include(router.urls)),
 ]
