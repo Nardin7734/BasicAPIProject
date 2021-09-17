@@ -14,6 +14,7 @@ class GenerosSerializer(serializers.ModelSerializer):
         return data
 
 
+
 class TiposSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tipos

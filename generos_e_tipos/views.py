@@ -10,7 +10,7 @@ class GenerosViewSet(viewsets.ModelViewSet):
     serializer_class = GenerosSerializer
     permission_classes = [IsAuthenticated, DjangoModelPermissions]
     authentication_classes = [BasicAuthentication, SessionAuthentication]
-
+    http_method_names = ['get', 'post', 'put', 'patch']
 
 
 class TiposViewSet(viewsets.ModelViewSet):
@@ -18,4 +18,6 @@ class TiposViewSet(viewsets.ModelViewSet):
     serializer_class = TiposSerializer
     permission_classes = [IsAuthenticated, DjangoModelPermissions]
     authentication_classes = [BasicAuthentication, SessionAuthentication]
+    http_method_names = ['get', 'post', 'put', 'patch']
+
 
